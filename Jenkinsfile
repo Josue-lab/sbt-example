@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sbt new playframework/play-scala-seed.g8
+                sbt compile
             }
         }
         stage('Test') {
