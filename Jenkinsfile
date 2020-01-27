@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "${tool name: 'sbt'}/bin/sbt compile"
+                sbt new playframework/play-scala-seed.g8
             }
         }
         stage('Test') {
